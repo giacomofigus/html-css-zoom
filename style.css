@@ -58,7 +58,6 @@ main{
     object-fit: cover;
     width: 300px;
     height: 150px;
-    
 }
 
 .zoom-container .user-video span{
@@ -69,8 +68,52 @@ main{
 }
 
 /* FOOTER */
-ul{
-    color: white;
+footer{
+    background-color: #222222;
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+    list-style-type: none;
+    
+    bottom: 0;
+    color: white;
+    padding: 20px; 
+    
+}
+
+ul li{
+    border: lime;
+    
+}
+
+ul li .fa-microphone-slash, .fa-video{
+    font-size: 30px;
+}
+
+ul li .fa-chevron-up{
+    font-size: 12px;
+}
+
+ul li div{
+    font-size: 16px;
+
+}
+
+
+
+#right-button div{
+    color: red;
+}
+
 
 
