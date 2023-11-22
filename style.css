@@ -2,11 +2,15 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    /* border: lime 1px solid; */
 }
 
 body{
     background-color: black;
+    font-family: sans-serif;
 }
+
+
 
 main :not(a i){
     text-decoration: none;
@@ -17,7 +21,7 @@ main :not(a i){
     position: absolute;
     right: 2px;
     top: 10px;
-    margin: 3px
+    margin: 3px;
 }
 
 .buttons-top span{
@@ -29,3 +33,44 @@ main :not(a i){
 .buttons-top span:first-child i{
     margin-right: 5px;
 }
+
+main{
+    height: 100vh;
+    border: 1px solid lime;
+}
+
+.zoom-container{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.zoom-container .user-video{
+    position: relative;
+    border: 1px solid lime;
+    background-image: url(https://picsum.photos/200/300);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 300px;
+    height: 150px;
+    
+}
+
+.zoom-container .user-video span{
+    background-color: rgba(128, 128, 128, 0.7);
+    position: absolute;
+    bottom: 0;
+    padding: 3px;
+}
+
+/* FOOTER */
+ul{
+    color: white;
+}
+
+
